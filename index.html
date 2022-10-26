@@ -1,9 +1,17 @@
 <!doctype html>
 <html>
   <head>
-    <title>Placeholder Title</title>
+    <title>Model Viewer</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      model-viewer{
+        width: 400px;
+        height: 600px;
+        margin: 0 auto;
+      }
+    </style>
   </head>
   <body>
-    <p>Nothing to see here... move along.</p>
+    <model-viewer src="assets/Cat.obj"></model-viewer>
   </body>
 </html>
