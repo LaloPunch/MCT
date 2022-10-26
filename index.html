@@ -1,17 +1,25 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Model Viewer</title>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <style>
-      model-viewer{
-        width: 400px;
-        height: 600px;
-        margin: 0 auto;
-      }
-    </style>
-  </head>
-  <body>
-    <model-viewer src="https://lalopunch.github.io/MCT/assets/korean_fire_extinguisher_01_4k.gltf"></model-viewer>
-  </body>
+<!DOCTYPE html>
+<html lang="us">
+    <head>
+        <meta charset="UTF-8">
+        <title>model viewer sample</title>
+        <script type="module"
+            src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    </head>
+    <body>
+        <div style="width:100%; margin:0 auto; height:80vh;">
+            <model-viewer
+                alt="desk_chair"
+                src="https://lalopunch.github.io/MCT/assets/korean_fire_extinguisher_01_4k.gltf"
+                style="width:100%;height:100%;"
+                background-color="#ECECEC"
+                shadow-intensity="0.9"
+                exposure="0.7"
+                camera-controls
+                autoplay
+                ar-modes="scene-viewer webxr quick-look"
+                auto-rotate ar>
+            </model-viewer>
+        </div>
+    </body>
 </html>
